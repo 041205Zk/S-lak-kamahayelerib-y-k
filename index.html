@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>ULTRA EĞLENCE PLATFORMU 🚀</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="cosmic-container">
+        <!-- Üst Bilgi -->
+        <header class="nebula-header">
+            <div class="hologram-clock" id="liveClock"></div>
+            <h1 class="quantum-title">🎆 MEGA EĞLENCE 2024! 
+                <span class="pixel-text">v5.zk</span>
+            </h1>
+        </header>
+
+        <!-- Ana Oyun Alanı -->
+        <main class="quantum-grid">
+            <!-- Müzik Modülü -->
+            <div class="cyber-card" id="musicBox">
+                <h2>🎧 EUROPA PA PARTI!</h2>
+                <div class="music-visualizer" id="visualizer"></div>
+                <button class="glow-btn" onclick="toggleMusic()">🎶 Müziği Aç/Kapat</button>
+            </div>
+
+            <!-- Mini Oyunlar -->
+            <div class="cyber-card">
+                <h2>🎮 HYPER OYUNLAR</h2>
+                <div class="game-grid">
+                    <div class="game-btn" onclick="startGame('zurafa')">
+                        🦒 Zürafa Yarışı
+                        <div class="progress-bar" id="zurafaProgress"></div>
+                    </div>
+                    <div class="game-btn" onclick="startGame('merdiven')">
+                        🪜 Merdiven Tırman
+                        <div class="heat-map" id="climbMap"></div>
+                    </div>
+                    <div class="game-btn" onclick="startGame('konfetti')">
+                        🎊 Konfetti Fırtınası
+                        <div class="particle-counter">✨: <span id="confettiCount">0</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interaktif Şakalar -->
+            <div class="cyber-card" id="jokeGenerator">
+                <h2>🤣 SİLA ŞAKA MAKİNESİ</h2>
+                <div class="joke-display" id="jokeDisplay"></div>
+                <button class="glow-btn" onclick="generateJoke()">YENİ ŞAKA ÜRET!</button>
+            </div>
+
+            <!-- 3D Karakter -->
+            <div class="cyber-card" id="character3d">
+                <h2>👾 SİLA 3D MODEL</h2>
+                <div class="character-container" id="sila3d"></div>
+                <div class="control-panel">
+                    <button class="glow-btn" onclick="dance()">💃 Dans Et</button>
+                    <button class="glow-btn" onclick="jump()">🦘 Zıpla</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Ses Elementleri -->
+        <audio id="mainTrack" src="joost-europapa.mp3" loop></audio>
+        <audio id="sfxJump" src="jump.mp3"></audio>
+    </div>
+</body>
+</html>
